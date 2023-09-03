@@ -1,8 +1,8 @@
 'use client';
 
+import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { socials } from '../constants';
-
 import styles from '../styles';
 import { footerVariants } from '../utils/motion';
 
@@ -38,7 +38,11 @@ const Footer = () => (
           <h4 className="font-extrabold text-[24px] text-white">
             METAVERUS
           </h4>
-          
+          <Link href='https://www.abdulhadi.info/' target='_blank'>
+            <div className="font-normal text-[14px] text-white opacity-50">
+            abdulhadi.
+          </div>
+          </Link>
 
           <div className="flex gap-4">
             {socials.map((social) => (
